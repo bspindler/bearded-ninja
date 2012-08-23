@@ -10,9 +10,9 @@ A svn pre-commit hook that allows you to freeze code down to the path level with
 
 Installation
 =============
-add the 'commit-access-control.pl' to your <svn-repos-path>/<repo>/hooks directory
+add the 'commit-access-control.pl' to your /path_svn_repo/hooks directory
 make it executable: 
   chmod +x commit-access-control.pl
 in that same directory, modify the 'pre-commit' script and add the following line: 
 
-<svn-repos-path>/<repos>/hooks/commit-access-control.pl "$REPOS" "$TXN" || exit 1
+/path_svn_repo/hooks/commit-access-control.pl "$REPOS" "$TXN" || exit 1
